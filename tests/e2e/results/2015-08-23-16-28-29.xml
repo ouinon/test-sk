@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="SEARCH-IN-URL - Should return expected elements" timestamp="2015-09-23T16:28:29" hostname="localhost" time="2.45" errors="0" tests="2" skipped="0" disabled="0" failures="0">
+  <testcase classname="SEARCH-IN-URL - Should return expected elements" name="&quot;kings&quot; Should return results" time="1.733" />
+  <testcase classname="SEARCH-IN-URL - Should return expected elements" name="&quot;kings&quot; Should a result with matching text" time="0.716" />
+ </testsuite>
+</testsuites>

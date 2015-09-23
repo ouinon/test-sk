@@ -1,0 +1,54 @@
+<div class="cte WdB">
+
+	<div class="o-tbl SpcB">
+		
+		<div class="tbl">
+				
+			<div class="cll">
+	
+				<div class="page-header"><h1>SK Finder</h1></div>
+
+				<form novalidate name="artistForm" ng-submit="artistForm.$valid && getResults(artistInput)" class="input-group"  data-tdd="asf-form">
+
+		          <input data-tdd="asf-input" ng-required ng-model="artistInput" type="text" class="form-control" placeholder="Search for...">
+
+		          <span class="input-group-btn">
+
+		            <button data-tdd="asf-submit" class="btn btn-primary" type="submit">Search</button>
+
+		          </span>
+		        </form>				
+
+			</div>
+
+
+		</div>
+
+	</div>
+
+	<div class="o-tbl SpcB">
+		
+		<div ng-show="artists.length" ng-repeat="artist in artists" data-tdd="asf-res" class="tbl">
+				
+			<div class="cll">
+
+				<span ng-if="!artist.identifier[0].mbid" ng-bind="artist.displayName"></span>
+
+				<a ng-if="artist.identifier[0].mbid" href="{{'artist' | nav : artist}}" ng-bind="artist.displayName"></a>
+		
+			</div>
+
+		</div>
+
+		<div data-tdd="asf-res-0" ng-hide="artists.length" class="tbl">
+				
+			<h3 data-tdd="asf-msg-begin" ng-hide="search">Please Enter a search…</h3>
+			
+			<h3 data-tdd="asf-msg-0" ng-show="search">There are no artists matching that description</h3>
+
+		</div>
+
+	</div>
+
+
+</div>

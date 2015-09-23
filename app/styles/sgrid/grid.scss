@@ -1,0 +1,119 @@
+$wdA:480px;
+$wdB:768px;
+$wdC:992px;
+$wdD:1200px;
+
+$cteWdA:600px;
+$cteWdB:940px;
+$cteWdC:1040px;
+
+.cte{
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  // clear: both
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  &.WdA{
+    max-width: $cteWdA;
+  }
+  &.WdB{
+    max-width: $cteWdB;
+  }
+  &.WdC{
+    max-width: $cteWdC;
+  }
+}
+
+// Outer table elements, they ensure correct spaceing of the cells accross the table
+.o-tbl{
+  position: relative;
+  clear: both;
+  &.SpcA{
+    margin: auto -1rem;
+    > .tbl{
+      border-spacing: 1rem 0;
+    }
+  }
+  &.SpcB{
+    margin: auto -2rem;
+    > .tbl{
+      border-spacing: 2rem 0;
+    }
+  }
+  &.SpcC{
+    margin: auto -3rem;
+    > .tbl{
+      border-spacing: 3rem 0;
+    }
+  }
+}
+
+// Table elements
+.tbl
+{
+  table-layout: fixed;
+  display:table;
+  width: 100%;
+  border-spacing: 0;
+  box-sizing:border-box;
+  margin-bottom: 3rem;
+  &.FlR{
+    float: right;
+    width: auto;
+  }
+  &.FlL{
+    float: left;
+    width: auto;
+  }
+  &.Auto{
+    width: auto;
+  }
+  &.Merge{
+    > .cll{
+      > .o-input{
+        border-radius:0rem;
+      }
+      &:first-child > .o-input{
+        border-top-left-radius:0.2rem;
+        border-bottom-left-radius:0.2rem;
+        &:after{
+          border-bottom-left-radius:0.2rem;
+        }
+      }
+      &:last-child  > .o-input{
+        border-top-right-radius:0.2rem;
+        border-bottom-right-radius:0.2rem;
+        &:after{
+          border-bottom-right-radius:0.2rem;
+        }
+      }
+    }
+     > .cll > .btn{
+      border-radius: 0;
+    }
+    > .cll:first-child > .btn{
+      border-top-left-radius: 0.2rem;
+      border-bottom-left-radius: 0.2rem;
+    }
+    > .cll:last-child > .btn{
+      border-top-right-radius: 0.2rem;
+      border-bottom-right-radius: 0.2rem;
+    }
+  }
+}
+// Tables within tables should not include a margin bottom
+.tbl .tbl{
+    margin-bottom: 0;
+}
+
+// Cells
+.cll{
+    position: relative;
+    display:table-cell;
+    vertical-align: top;
+}

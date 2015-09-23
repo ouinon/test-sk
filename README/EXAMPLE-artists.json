@@ -1,0 +1,11 @@
+{"onTourUntil":null,
+"identifier":[
+	{"setlistsHref":"http://api.songkick.com/api/3.0/artists/mbid:14b649fd-a358-402d-8bef-7c8fc7dcc4f4/setlists.json",
+		"href":"http://api.songkick.com/api/3.0/artists/mbid:14b649fd-a358-402d-8bef-7c8fc7dcc4f4.json",
+		"mbid":"14b649fd-a358-402d-8bef-7c8fc7dcc4f4",
+		"eventsHref":"http://api.songkick.com/api/3.0/artists/mbid:14b649fd-a358-402d-8bef-7c8fc7dcc4f4/calendar.json"}
+	],
+"displayName":"Happy",
+"uri":"http://www.songkick.com/artists/106275-happy?utm_source=26333&utm_medium=partner",
+"id":106275,
+"$$hashKey":"object:7"}

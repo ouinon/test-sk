@@ -1,0 +1,29 @@
+{
+	"build_systems":
+	[
+		{
+			"cmd":
+			[
+				"./init.sh"
+			],
+			"name": "Run ./init.sh",
+			"path": "/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/"
+		}
+	],
+	"folders":
+	[
+		{
+			"folder_exclude_patterns":
+			[
+				"sk-build",
+				".sass-cache",
+				".tmp",
+				"bower_components"
+			],
+			"path": "."
+		},
+		{
+			"path": "bower_components"
+		}
+	]
+}
